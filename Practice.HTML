@@ -1,0 +1,62 @@
+
+<!--this is a practice function-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+<style>
+
+h1{ 
+color: Blue;
+font-family: "Courier New", Courier, Monospace;
+}
+p{
+color: Blue; <!--Im setting this so I can show it can be overwritten-->
+font-family: "Ariel", Arial, Sans-serif;
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>Test Changing Style Settings</h1>
+
+<p style="color:red;font-size:25px;"  id="practice">This is simply a test to be able to see if I can create a button.</p>
+
+<button type="button" onclick="document.getElementById('practice').innerHTML = 'It worked';
+document.getElementById('practice').style.fontSize = '15px';
+document.getElementById('practice').style.color = 'green';">Click Here</button>
+
+<h2> Load a JavaScript doc from a different location</h2>
+
+<p id="hello"> test test </p>
+<button type="button" onclick="Name()"> here </button>
+
+<script src='Include.js'> </script>
+
+<h3> What is 1+1? </h3>
+<p>
+<input type= "button" onclick="alert('Wrong, Try Again')" value="3">
+<input type= "button" onclick="alert('Wrong, Try Again')" value="4">
+</p>
+<p>
+<input type= "button" onclick="alert('Correct')" value="2"> 
+<input type= "button" onclick="alert('Wrong, Try Again')" value="0">
+</p>
+
+<h4 id="head"> What is your Name?</h4>
+<style>
+#head {
+color:yellow;
+}
+</style>
+<form>
+First Name:<br>
+<input type="text" name="firstname"<br>
+<input type="submit" value="Submit">
+</form>
+</body> 
+</html>
+
