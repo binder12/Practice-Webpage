@@ -27,7 +27,7 @@ x.className = "mystyle";
 //return document.getElementById("name").value;
 
 
-var t= document.createTextNode("Hi"+ Person.fname + Person.lname);
+var t= document.createTextNode("Hi " + Person.fname +" "+ Person.lname);
 //var t = FirstName();
 //var t = return document.getElementById("name").value;
 
