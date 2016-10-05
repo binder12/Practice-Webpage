@@ -16,10 +16,17 @@ color: Blue; <!--Im setting this so I can show it can be overwritten-->
 font-family: "Ariel", Arial, Sans-serif;
 }
 
+.mystyle{
+color: favcolor();
+font-size: 26px
+}
+
 </style>
 </head>
 
 <body>
+<div id="divi""></div>
+
 
 <h1>Test Changing Style Settings</h1>
 
@@ -52,11 +59,24 @@ document.getElementById('practice').style.color = 'green';">Click Here</button>
 color:yellow;
 }
 </style>
-<form>
+
+<script src='on_return.js'></script>
+
 First Name:<br>
-<input type="text" name="firstname"<br>
-<input type="submit" value="Submit">
-</form>
+<input id="fname" type="text" name="firstname"<br>
+<br>
+Last Name:<br>
+<input id="lname" type="text" name="lastname"<br>
+<br>
+Address:<br>
+<input id="address" type="text" name="adress"<br>
+<br>
+Favorite Color:<br>
+<input id="favcol" type="text" name="favoritecolor"<br>
+<br>
+<input type="submit" value="Submit" onclick="on_return()">
+
+
 </body> 
 </html>
 
