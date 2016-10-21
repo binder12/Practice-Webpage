@@ -8,7 +8,7 @@ if (x>10) {
 }
 
 else{
-for (ii = 1; ii=x; ii++) {
+for (ii = 1; ii<x; ii++) {
 result = ( [1,3,5,7,9].includes(ii) || [1,2,3,5,7].includes(ii));
 	}
 }
